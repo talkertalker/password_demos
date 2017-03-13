@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    overflow: hidden;
+    color: #434547;
+}
+
+
+
+#content {
+    position: relative;
+    height: 450px;
+    width: 500px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 40px auto 0 auto;
+}
+
+.content__logo {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    z-index: 1;
+    left: 60px;
+    top: -10px;
+}
+
+
+.content__container {
+    position: relative;
+    height: 450px;
+    width: 500px;
+    padding: 15px;
+    border: 1px solid #84aeed;
+    border-radius: 5px;
+}
+
+.content__introScreen,
+.content__testOne,
+.content__testTwo,
+.content__results {
+    position: absolute;
+    height: 450px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.content__introScreen--divider,
+.content__testOne--divider {
+    position: relative;
+    height: 1px;
+    background: #b3cbef;
+    width: 200px;
+    margin: auto;
+}
+
+.content__introScreen--divider2 {
+    position: relative;
+    height: 1px;
+    background: #b3cbef;
+    width: 300px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.content__introScreen--textArea {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin-top: 30%;
+}
+
+/*----Begin Style for Test One----*/
+
+.content__testOne {
+    right: 100%;
+    opacity: 0;
+    font-size: 14px;
+    height: 410px;
+    padding-top: 40px;
+}
+
+
+.testOne__explain,
+.testTwo__explain {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    margin-left: 1px;
+    margin-top: 5px;
+}
+
+.titleDivider {
+    position: relative;
+    height: 1px;
+    width: 200px;
+    background: #d6d4d4;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.content__testOne--divider {
+    position: relative;
+    height: 1px;
+    width: 100px;
+    margin-left: 0;
+    background: #b3cbef;
+}
+
+.testOne__questions,
+.testTwo__questions {
+    position: relative;
+    background: #f9f9f9;
+    width: 432px;
+    padding-left: 15px;
+    padding-top: 2px;
+    margin-left: 10px;
+    margin-top: 20px;
+    opacity: 0;
+}
+
+.testOne__formOne {
+    position: relative;
+    float: left;
+}
+
+.testOne__feedbackAreaOne {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.testOne__badge,
+.testOne__badgeTwo,
+.testTwo__badge {
+    position: relative;
+    height: 17px;
+    width: 17px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.fail,
+.pass {
+    position: absolute;
+    height: 16px;
+    width: 17px;
+    border-radius: 50%;
+    color: white;
+    padding-top: 1px;
+    visibility: hidden;
+}
+
+
+.fail {
+    background: #ff7575;
+    font-size: 12px;
+}
+
+.pass {
+    background: #72ffa1;
+    font-size: 10px;
+    padding-right: 1px;
+    padding-top: 3px;
+    width: 16px;
+    height: 15px;
+}
+
+
+.badge__visible {
+    visibility: visible;
+}
+
+
+.testOne__formOne--feedback,
+.testOne__formTwo--feedback,
+.testTwo__formOne--feedback {
+    position: relative;
+    font-size: 10px;
+    float: left;
+    line-height: 0;
+    color: red;
+
+}
+
+.testOne__feedbackAreaTwo {
+    position: relative;
+    margin-top: 15px;
+}
+
+.testOne__formTwo,
+.testOne__badgeTwo,
+.testOne__formTwo--feedback,
+.testTwo__formOne,
+.testTwo__badge,
+.testTwo__formOne--feedback {
+    float: left;
+}
+
+.testOne__submitButton {
+    clear: left;
+    margin-bottom: 10px;
+}
+
+.testOne__successMessage,
+.testTwo__successMessage {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+
+}
+
+.testOne__successMessage p,
+.testTwo__successMessage p {
+    position: relative;
+    line-height: 0;
+    top: 19px;
+    
+}
+
+.testOne__opacityTransition {
+    opacity: 1;
+    -o-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.disabled {
+    position: relative;
+    opacity: 0.3;
+}
+
+.blocker {
+    position: absolute;
+    height: 105px;
+    width: 200px;
+    z-index: 3;
+    top: 264px;
+    left: 20px;
+}
+
+.blockerOff {
+    height: 0;
+    width: 0;
+    z-index: -1;
+}
+
+.testOne__errorWindow {
+    position: absolute;
+    height: 481px;
+    width: 531px;
+    border-radius: 5px;
+    background: white;
+    z-index: -3;
+    top: 15px;
+    left: 15px;
+    right: 0;
+    opacity: 0;
+    -o-filter: blur;
+    -ms-filter: blur;
+    -webkit-filter: blur(51px);
+    filter: blur;
+    -o-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.testOne__errorWindow--message {
+    position: absolute;
+    height: 160px;
+    width: 250px;
+    text-align: center;
+    padding-top: 15px;
+    background: white;
+    opacity: 0;
+    top: 175px;
+    left: 150px;
+    border: 1px solid #7d8ae0;
+    border-radius: 5px;
+    filter: none;
+    z-index: -3;
+}
+
+.testOne__errorWindow--message p {
+    font-size: 12px;
+}
+
+
+
+.errorDivider {
+    margin-top: 15px;
+}
+
+.errorFade {
+    opacity: 0;
+}
+
+/*-------Begin Style for Test Two---------------*/
+
+.content__testTwo {
+    top: 100%;
+    opacity: 0;
+    height: 395px;
+    padding-top: 55px;
+    width: 485px;
+    padding-left: 15px;
+}
+
+.testTwo__random {
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.random__highlite {
+    background: #faffc1;
+}
+
+.content__testTwo--divider {
+    position: relative;
+    height: 1px;
+    width: 200px;
+    background: #b3cbef;
+    margin: auto;
+}
+
+
+
+.content__testOne h1,
+.content__testTwo h1,
+.content__testOne h2,
+.content__testTwo h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.content__testOne h2,
+.content__testTwo h2 {
+    font-size: 18px;
+}
+
+.testTwo__submitButton {
+    margin-bottom: 10px;
+}
+
+/*--------Begin Style for Results-------------*/
+
+.content__results {
+    bottom: 100%;
+    opacity: 0;
+    text-align: center;
+    height: 380px;
+    padding-top: 70px;
+}
+
+.content__results--feedback {
+    font-size: 28px;
+}
+
+.content__results--divider {
+    position: relative;
+    height: 1px;
+    width: 150px;
+    background: #b3cbef;
+    margin: auto;
+}
+
+.outroDivider {
+    width: 200px;
+}
+
+.content__results--reset {
+    text-decoration: underline;
+}
+
+.content__results--reset:hover {
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 60px;
+    height: 30px;
+    width: 30px;
+    background: #eaffec;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    left: 50%;
+    margin-left: -15px;
+    z-index: -9;
+    opacity: 0;
+}
