@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Password Demo - Davey T. Knific</title>
+      <link rel="stylesheet" type="text/css" href="/passworddemos/style.css">
+      <link rel="icon" href="/passworddemos/img/favi.png" sizes="32x32" type="image/png">
+   </head>
+   
+   <body>
+      <div id="content">
+      
+         <a href="http://www.dtkfrontend.design" target="_blank">
+         <img class="content__logo" alt="logo" src="/passworddemos/img/logo.jpg"/>
+         </a>
+         <div class="content__container">
+         
+            <div class="content__introScreen">
+               <div class="content__introScreen--textArea">
+                  <div class="content__introScreen--divider"></div>
+                  <p>Welcome to Password Demo!</p>
+                  <p>This demonstration shows two<br>common instances of user string-matching.</p>
+                  <p>None of your information will be stored.</p>
+                  <button class="begin">Begin!</button>
+                  <div class="content__introScreen--divider2"></div>
+               </div>
+            </div>
+            
+            <div class="content__testOne">
+               <h1 class="testOne__title">Test 1:</h1>
+               <h2 class="testOne__subtitle">String requirements and confirmation</h2>
+               <p class="testOne__explain">Ask the user to meet certain input requirements,<br>then match their data with data from a separate handler.<br>If the user submits information that doesn't match,<br>display an error popup.</p>
+               <div class="titleDivider"></div>
+               <div class="testOne__questions">
+                  <p>Please enter a password that is 7 characters long<br>and is a mix of letters, 1 number, and 1 symbol.</p>
+                  <div class="content__testOne--divider"></div>
+                  <br>
+                  <div class="testOne__feedbackAreaOne">
+                     <input type="password" class="testOne__formOne">
+                     <div class="testOne__badge">
+                        <div class="fail">x</div>
+                        <div class="pass">&#10004;</div>
+                     </div>
+                     <p class="testOne__formOne--feedback"></p>
+                  </div>
+                  <br>
+                  
+                     <div class="testOne__opacityTransition disabled">
+                        <p>Please re-enter your password.</p>
+                        <div class="content__testOne--divider"></div>
+                        <div class="testOne__feedbackAreaTwo">
+                           <input type="password" class="testOne__formTwo">
+                           <div class="testOne__badgeTwo">
+                              <div class="fail">x</div>
+                              <div class="pass">&#10004;</div>
+                           </div>
+                        <p class="testOne__formTwo--feedback"></p>
+                     </div>
+                     <br>
+                     <br>
+                        <button class="testOne__submitButton">Submit</button>
+                     </div>
+                     
+                 </div>
+                 <div class="testOne__successMessage">
+                     <p>Success!</p>
+                  </div>
+               
+                  <div class="blocker"></div>
+                  
+                  
+               </div>
+            
+         
+            
+            <div class="content__testTwo">
+               <h1 class="testTwo__title">Test 2:</h1>
+               <h2 class="testTwo__subtitle">Random string generation and user matching.</h2>
+               <p class="testTwo__explain">Generate a random string and require the user to match it.<br><i>Note: this demonstration is case sensitive.</i></p>
+               <div class="titleDivider"></div>
+               <div class="testTwo__questions">
+               <p class="testTwo__random"><span class="random__highlite"></span></p>
+               <div class="content__testTwo--divider"></div>
+               
+                  <p>Please enter the characters shown above.</p>
+                  <div class="content__testOne--divider"></div>
+                  <br>
+                  <input type="text" class="testTwo__formOne">
+                  <br>
+                  <br>
+                  <button class="testTwo__submitButton">Submit</button>
+               </div>
+               <div class="testTwo__successMessage">
+                  <p>Success!</p>
+               </div>
+            </div>
+            
+            <div class="content__results">
+               <p class="content__results--feedback">That's it!</p>
+               <div class="content__results--divider"></div>
+               <p>Click here to view the code on Github,</p>
+               <p>or <span class="content__results--reset">click here</span> to view the demo again.</p>
+               <div class="content__introScreen--divider2 outroDivider"></div>
+            </div>
+            
+         </div>
+         <div class="testOne__errorWindow"></div>
+                  <div class="testOne__errorWindow--message">
+                        <h1>Whoops!</h1>
+                        <div class="content__introScreen--divider errorDivider"></div>
+                        <p>It looks like there was an error.<br>Let's try that one more time.</p>
+                        <button class="errorSubmit">Okay</button>
+                    </div>
+      </div>
+      <script src="/passworddemos/js/jquery-3.1.1.min.js"></script>
+      <script src="/passworddemos/js/script.js"></script>
+   </body>
+</html>
